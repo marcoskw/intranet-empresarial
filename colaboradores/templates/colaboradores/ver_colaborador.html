@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+  <h1 class="mt-5">{{ colaborador.nome }}</h1>
+  <dl>
+    <dt>ID - Intranet</dt>
+    <dd>{{ colaborador.id }}</dd>
+
+    <dt>Nome</dt>
+    <dd>{{ colaborador.nome }}</dd>
+
+    <dt>Setor</dt>
+    <dd>{{ colaborador.setor }}</dd>
+
+    <dt>Cargo</dt>
+    <dd>{{ colaborador.cargo }}</dd>
+
+    <dt>Ramal</dt>
+    <dd>{{ colaborador.ramal }}</dd>
+
+    <dt>E-mail</dt>
+    <dd>{{ colaborador.email }}</dd>
+
+    <dt>Data Aniversário</dt>
+    <dd>{{ colaborador.data_aniversario }}</dd>
+
+  </dl>
+
+{% endblock %}

@@ -17,7 +17,7 @@
         {% for colaborador in colaboradores %}
           <tr>
             <td>
-              <a href="#">{{ colaborador.nome}}</a>
+              <a href=" {% url 'ver_colaborador' colaborador.id %} ">{{ colaborador.nome}}</a>
             </td>
             <td>{{ colaborador.setor}}</td>
             <td>{{ colaborador.cargo}}</td>
