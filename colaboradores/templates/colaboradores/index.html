@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <h1 class="mt-5">Colaboradores da Empresa</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Setor</th>
+          <th>Cargo</th>
+          <th>Ramal</th>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for colaborador in colaboradores %}
+          <tr>
+            <td>
+              <a href="#">{{ colaborador.nome}}</a>
+            </td>
+            <td>{{ colaborador.setor}}</td>
+            <td>{{ colaborador.cargo}}</td>
+            <td>{{ colaborador.ramal}}</td>
+            <td><a href="mailto:{{ colaborador.email}}">{{ colaborador.email}} </a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+{% endblock %}
