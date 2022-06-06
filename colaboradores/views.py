@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.http import Http404
 from .models import Colaborador
 
 
@@ -10,7 +11,8 @@ def index(request):
 
 
 def ver_colaborador(request, colaborador_id):
-    colaborador = Colaborador.objects.get(id=colaborador_id)
+    colaborador = get_object_or_404(Colaborador, id=colaborador_id)
     return render(request, 'colaboradores/ver_colaborador.html', {
         'colaborador': colaborador
     })
+
