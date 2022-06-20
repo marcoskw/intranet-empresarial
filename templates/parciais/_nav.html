@@ -7,5 +7,29 @@
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Informativos</a>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Colaboradores</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sistema Externo A</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sistema Externo B</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-lg-4" action="/busca/">
+                <input name="termo" value="" class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
+                       aria-label="Search">
+            </form>
+            -->
+        </div>
   </div>
 </nav>
